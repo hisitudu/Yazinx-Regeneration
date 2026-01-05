@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Yazinx</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Success!</h1>
+        <h2 id="welcomeUser">Welcome to your Dashboard</h2>
+        <p>You have successfully bypassed the login security.</p>
+        
+        <button onclick="logout()" style="background-color: #555;">Logout</button>
+    </div>
+
+    <script>
+        // Check if user is logged in
+        const user = localStorage.getItem('registeredUser');
+        if (!user) {
+            // If no user is found in memory, send them back to login
+            window.location.href = "login.html";
+        } else {
+            document.getElementById('welcomeUser').innerText = "Welcome, " + user + "!";
+        }
+
+        function logout() {
+            // We don't clear the memory (so they can login again), 
+            // but we send them back to the start.
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
