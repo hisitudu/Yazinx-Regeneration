@@ -64,3 +64,6 @@ passwordInput.addEventListener('input', function() {
         text.style.color = "green";
     }
 });
+// Inside form.addEventListener('submit'... in script.js:
+const email = document.getElementById('email').value;
+localStorage.setItem('userEmail', email); // Add this line!
