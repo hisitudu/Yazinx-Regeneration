@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #eef2f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 85%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 { color: #333; margin-bottom: 20px; }
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1.5px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input:focus { border-color: #007bff; }
+
+.password-container {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.show-pass {
+    font-size: 13px;
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.clear-btn {
+    background-color: #ff4757;
+    margin-top: 20px;
+    font-size: 12px;
+    padding: 8px;
+}
+
+#message {
+    margin-top: 15px;
+    color: #2ed573;
+    font-weight: bold;
+}
+#strength-meter {
+    height: 5px;
+    width: 0%; /* Starts at 0 */
+    background-color: red;
+    margin-top: 5px;
+    transition: width 0.3s, background-color 0.3s;
+    border-radius: 5px;
+}
+
+#strength-text {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Create Account</h2>
+        <form id="regForm">
+            <input type="text" id="username" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            
+            <div class="password-container">
+                <input type="password" id="password" placeholder="Password" required>
+                <label class="show-pass">
+                    <input type="checkbox" id="togglePassword"> Show Password
+                </label>
+            </div>
+            
+            <button type="submit">Register</button>
+        </form>
+        
+        <p id="message"></p>
+        
+        <button onclick="clearData()" class="clear-btn">Clear Saved Data</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<div id="strength-meter"></div>
+<p id="strength-text"></p>
